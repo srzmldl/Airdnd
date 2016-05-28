@@ -1,0 +1,12 @@
+<header>
+    <% logo = image_tag("logoFinal.jpg", :alt => "Sample App", :class => "round") %>
+    <%= link_to logo, home_path %>
+    <nav class="round">
+        <ul>
+            <li><%= link_to "首页", home_path %></li>
+            <li><%= link_to "帮助", help_path %></li>
+            <li><%= link_to "登陆", '#' %></li>
+            <li><%= link_to "注册", signup_path %></li>
+        </ul>
+    </nav>
+</header>
