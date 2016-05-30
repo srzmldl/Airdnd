@@ -1,0 +1,13 @@
+<tr>
+    <td> <%= hotel.location %> </td>
+    <td> <%= hotel.price %> </td>
+    <td> <%= hotel.numRooms %> </td>
+    <td> <%= hotel.numAvail %> </td>
+    <% if current_user != nil && current_user.admin? %>
+        <td> <%= link_to "delete", hotel, :method => :delete, :confirm => "You sure?", :title => "Delete #{hotel.location}" %>
+        | <%= link_to "edit", hotel, :method => :get, :title => "Edit #{hotel.location}" %> </td>
+    <% else %>
+        <td> <%= link_to "order", hotel, :method => :delete, :confirm => "You sure?", :title => "Delete #{hotel.location}" %> </td>
+    <% end %>
+    
+</tr>

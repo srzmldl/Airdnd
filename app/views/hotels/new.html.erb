@@ -1,0 +1,24 @@
+<h1>添加宾馆</h1>
+<%= form_for @hotel do |f| %>
+    <%= render 'shared/error_messages', :object => f.object%>
+    <div class="field">
+        <%= f.label :location, "位置"%><br />
+        <%= f.text_field :location %>
+    </div>
+    <div class="field">
+        <%= f.label :price, "价格" %><br />
+        <%= f.text_field :price %>
+    </div>
+    <div class="field">
+        <%= f.label :numRooms, "房间数" %><br />
+        <%= f.text_field :numRooms %>
+    </div>
+    <div class="field">
+        <%= f.label :numAvail, "空闲房间数" %><br />
+        <%= f.text_field :numAvail %>
+    </div>
+    <div class="actions">
+        <%= f.submit "确认添加" %>
+    </div>
+<% end %>
+

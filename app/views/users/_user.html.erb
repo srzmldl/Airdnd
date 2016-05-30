@@ -1,6 +1,7 @@
-<li>
-    <%= link_to user.name, user %>
+<tr>
+    <td> <%= link_to user.name, user %> </td>
+    <td> <%= link_to user.email, user %> </td>
     <% if current_user != nil && current_user.admin? %>
-        | <%= link_to "delete", user, :method => :delete, :confirm => "You sure?", :title => "Delete #{user.name}" %>
+        <td> <%= link_to "delete", user, :method => :delete, :confirm => "You sure?", :title => "Delete #{user.name}" %> </td>
     <% end %>
-</li>
+</tr>

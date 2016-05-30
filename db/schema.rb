@@ -11,7 +11,43 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160529030430) do
+ActiveRecord::Schema.define(version: 20160530051930) do
+
+  create_table "cars", force: :cascade do |t|
+    t.string   "location"
+    t.integer  "price"
+    t.integer  "numCars"
+    t.integer  "numAvail"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "flights", force: :cascade do |t|
+    t.string   "flightNum"
+    t.integer  "price"
+    t.integer  "numSeats"
+    t.integer  "numAvail"
+    t.integer  "FromCity"
+    t.integer  "ArivCity"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "hotels", force: :cascade do |t|
+    t.string   "location"
+    t.integer  "price"
+    t.integer  "numRooms"
+    t.integer  "numAvail"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "reservations", force: :cascade do |t|
+    t.string   "userName"
+    t.integer  "resvType"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "name"
