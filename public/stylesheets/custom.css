@@ -55,7 +55,7 @@ nav ul li {
     padding: 0.2em 0;
 }
 nav ul li a {
-    padding: 0 20px;
+    padding: 0 6px;
     font-weight: bold;
 }
 nav ul li a:visited {
@@ -157,4 +157,11 @@ div.field, div.actions {
 #error_explanation ul li {
     font-size: 12px;
     list-style: square;
+}
+
+ul.users {
+    margin-top: 1em;
+}
+.users li {
+    list-style: none;
 }

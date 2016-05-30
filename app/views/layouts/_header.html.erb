@@ -3,15 +3,17 @@
     <%= link_to logo, home_path %>
     <nav class="round">
         <ul>
-            <li><%= link_to "首页", home_path %></li>
+            <li><%= link_to "Home", home_path %></li>
             <% if signed_in? %>
-                <li><%= link_to "个人中心", current_user %></li>
+                <li><%= link_to "Users", users_path %></li>
+                <li><%= link_to "Profile", current_user %></li>
+                <li><%= link_to "Setting", edit_user_path(current_user) %></li>
             <% end %>
-            <li><%= link_to "注册", signup_path %></li>
+            <li><%= link_to "Signup", signup_path %></li>
             <% if signed_in? %>
-                <li><%= link_to "退出", signout_path, :method => :delete, :confirm => "Are you sure?" %> </li>
+                <li><%= link_to "Signout", signout_path, :method => :delete, :confirm => "Are you sure?" %> </li>
             <% else %>
-                <li><%= link_to "登陆", signin_path %></li>
+                <li><%= link_to "Signin", signin_path %></li>
             <% end %>
         </ul>
     </nav>
