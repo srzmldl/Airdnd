@@ -33,9 +33,9 @@ class HotelsController < ApplicationController
 
   def update
     @hotel = Hotel.find(params[:id])
-    if @hotel.update_attributes(user_paramse)
+    if @hotel.update_attributes(hotel_params)
       flash[:success] = "Hotel updated"
-      redirect_to @hotel
+      redirect_to hotels_path
     else
       @title = "Edit hotel"
       render 'edit'
