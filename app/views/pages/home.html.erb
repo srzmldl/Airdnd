@@ -8,7 +8,7 @@
         </tr>
         <tr>
             <td> <%= link_to "管理出租车", '#', :class => "home_button round" %> </td>
-            <td> <%= link_to "管理预定", '#', :class => "home_button round" %> </td>
+            <td> <%= link_to "管理预定", manage_trip_path, :class => "home_button round" %> </td>
         </tr>
     </table>
  <% else %>
@@ -20,8 +20,9 @@
         </tr>
         <tr>
             <td> <%= link_to "预定出租车", '#', :class => "home_button round" %> </td>
-            <td> <%= link_to "个人预定", '#', :class => "home_button round" %> </td>
+            <td> <%= link_to "行程管理", trip_path(current_user == nil ? "" : current_user.name), :class => "home_button round" %> </td>
         </tr>
     </table>
     
 <% end %>
+

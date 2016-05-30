@@ -2,8 +2,26 @@
 class UsersController < ApplicationController
   before_filter :authenticate, :only => [:edit, :update]
   before_filter :correct_user, :only => [:edit, :update]
-  before_filter :admin_user, :only => :destroy
+  before_filter :admin_user, :only => [:destroy, :tripManage]
 
+  def tripList
+  #  debugger
+    if signed_in? == false
+      redirect_to signin_path, :notice => "Please sign in to look your trips"
+      return
+    end
+    @userNameTrips = params[:format]
+    allTrip = Reservation.list_single_user(params[:format])
+    @hotelsTrip = []
+    @flightsTrip = []
+    @carsTrip = []
+    transferIndividual(allTrip)
+  end
+
+  def tripManage
+    @allTrips = Reservation.all;
+  end
+  
   def new
     @user = User.new
     @title = "Sign up"
@@ -75,5 +93,33 @@ class UsersController < ApplicationController
   def admin_user
     redirect_to(root_path) unless current_user.admin?
   end
-  
+
+  def transferIndividual(allTrip, userName = "")
+#    debugger
+    allTrip.each do |t|
+      if t.resvType == 1
+        tFlight = Flight.find_by_flightNum(t.identity)
+        if tFlight != nil
+          tFlight.id = t.id
+          tFilght.userName = userName
+          @flightsTrip.push(tFlight)
+        end
+      elsif t.resvType == 2
+        #debugger
+        tHotel = Hotel.find_by_location(t.identity)
+        if tHotel != nil
+          tHotel.id = t.id
+          @hotelsTrip.push(tHotel)
+        end
+      elsif t.resvType == 3
+        tCar = Car.find_by_location(t.identity)
+        if tCar != nil
+          tCar.id = t.id
+          tCar.userName = userName
+          @carsTrip.push(tCar)
+        end
+      end
+    end
+  end
+
 end

@@ -12,13 +12,16 @@ Rails.application.routes.draw do
   get 'signup' => 'users#new'
 
   resources :users
-
+  get '/trip' => 'users#tripList'
+  get '/manage/trip' => 'users#tripManage'
+  
   resources :sessions
   get 'signin' => 'sessions#new'
   delete 'signout' => 'sessions#destroy'
 
   resources :hotels
-  
+  post '/hotels/order' => 'hotels#order'
+  delete '/hotelsOrder' => 'hotels#destroyOrder'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

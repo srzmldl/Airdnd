@@ -1,0 +1,27 @@
+<h1>  All Trips</h1>
+<table>
+    <tr>
+        <th> 预定ID </th>
+        <th> 预订用户 </th>
+        <th> 预订类型 </th>
+        <th> 预订地点/航班号 </th>
+        <th> 操作 </th>
+    </tr>
+    <% @allTrips.each do |allTrip| %>
+        <tr>
+            <td> <%= allTrip.id %> </td>
+            <td> <%= link_to allTrip.userName, trip_path(allTrip.userName) %> </td>
+            <td> <%= allTrip.resvType %> </td>
+            <td> <%= allTrip.identity %> </td>
+            <% if allTrip.resvType == 1 %>
+                <td> <%= link_to "delete", flights_order_path(allTrip.id), :method => :delete, :confirm => "You sure?", :title => "Order destroy" %> </td>
+            <% elsif allTrip.resvType == 2 %>
+                <td> <%= link_to "delete", hotelsOrder_path(allTrip.id), :method => :delete, :confirm => "You sure?", :title => "Order destroy" %>
+                </td>
+            <% elsif allTrip.resvType == 2 %>
+                <td> <%= link_to "delete", cars_order_path(allTrip.id), :method => :delete, :confirm => "You sure?", :title => "Order destroy" %>
+                </td>
+            <% end %>
+        </tr>
+    <% end %>
+</table>

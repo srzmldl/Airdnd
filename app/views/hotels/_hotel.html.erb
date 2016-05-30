@@ -7,7 +7,8 @@
         <td> <%= link_to "delete", hotel, :method => :delete, :confirm => "You sure?", :title => "Delete #{hotel.location}" %>
         | <%= link_to "Edit", edit_hotel_path(hotel), :method => :get, :title => "Edit #{hotel.location}" %> </td>
     <% else %>
-        <td> <%= link_to "order", hotel, :method => :delete, :confirm => "You sure?", :title => "Delete #{hotel.location}" %> </td>
+        <td>
+            <%= link_to "Order", hotels_order_path(hotel.id), :method => :post, :confirm => "You sure?", :title => "Order #{hotel.location}" %> </td>
     <% end %>
 
 </tr>

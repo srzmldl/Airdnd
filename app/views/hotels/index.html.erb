@@ -1,7 +1,11 @@
 <h1> All hotels   </h1>
+
+<% if current_user != nil && current_user.admin? %>
 <div class="field">
-    <%= link_to "添加酒店", new_hotel_path, :class => "index_add_button round" %>
+          <%= link_to "添加酒店", new_hotel_path, :class => "index_add_button round" %>
 </div>
+<% end %>
+
 <%= will_paginate %>
 <table>
     <tr>
