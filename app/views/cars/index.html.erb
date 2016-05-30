@@ -1,0 +1,21 @@
+<h1> All Cars   </h1>
+
+<% if current_user != nil && current_user.admin? %>
+<div class="field">
+          <%= link_to "添加出租车", new_car_path, :class => "index_add_button round" %>
+</div>
+<% end %>
+
+<%= will_paginate %>
+<table>
+    <tr>
+        <th> 位置 </th>
+        <th> 价格 </th>
+        <th> 总出租车数目 </th>
+        <th> 空闲出租车数目 </th>
+        <th> 操作 </th>
+    </tr>
+    <%= render @cars %>
+</table>
+
+<%= will_paginate %>

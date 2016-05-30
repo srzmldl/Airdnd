@@ -7,7 +7,7 @@
             <td> <%= link_to "管理航班", '#', :class => "home_button round" %> </td>
         </tr>
         <tr>
-            <td> <%= link_to "管理出租车", '#', :class => "home_button round" %> </td>
+            <td> <%= link_to "管理出租车", 'cars', :class => "home_button round" %> </td>
             <td> <%= link_to "管理预定", manage_trip_path, :class => "home_button round" %> </td>
         </tr>
     </table>
@@ -19,7 +19,7 @@
             <td> <%= link_to "预定航班", '#', :class => "home_button round" %> </td>
         </tr>
         <tr>
-            <td> <%= link_to "预定出租车", '#', :class => "home_button round" %> </td>
+            <td> <%= link_to "预定出租车", 'cars', :class => "home_button round" %> </td>
             <td> <%= link_to "行程管理", trip_path(current_user == nil ? "" : current_user.name), :class => "home_button round" %> </td>
         </tr>
     </table>

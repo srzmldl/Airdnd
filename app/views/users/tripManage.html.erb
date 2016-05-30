@@ -14,14 +14,15 @@
             <td> <%= allTrip.resvType %> </td>
             <td> <%= allTrip.identity %> </td>
             <% if allTrip.resvType == 1 %>
-                <td> <%= link_to "delete", flights_order_path(allTrip.id), :method => :delete, :confirm => "You sure?", :title => "Order destroy" %> </td>
+                <td> <%= link_to "delete", flightsOrder_path(allTrip.id), :method => :delete, :confirm => "You sure?", :title => "Order destroy" %> </td>
             <% elsif allTrip.resvType == 2 %>
                 <td> <%= link_to "delete", hotelsOrder_path(allTrip.id), :method => :delete, :confirm => "You sure?", :title => "Order destroy" %>
                 </td>
-            <% elsif allTrip.resvType == 2 %>
-                <td> <%= link_to "delete", cars_order_path(allTrip.id), :method => :delete, :confirm => "You sure?", :title => "Order destroy" %>
+            <% elsif allTrip.resvType == 3 %>
+                <td> <%= link_to "delete", carsOrder_path(allTrip.id), :method => :delete, :confirm => "You sure?", :title => "Order destroy" %>
                 </td>
             <% end %>
         </tr>
     <% end %>
 </table>
+

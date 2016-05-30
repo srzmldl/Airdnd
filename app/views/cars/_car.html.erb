@@ -1,0 +1,14 @@
+<tr>
+    <td> <%= car.location %> </td>
+    <td> <%= car.price %> </td>
+    <td> <%= car.numCars %> </td>
+    <td> <%= car.numAvail %> </td>
+    <% if current_user != nil && current_user.admin? %>
+        <td> <%= link_to "delete", car, :method => :delete, :confirm => "You sure?", :title => "Delete #{car.location}" %>
+        | <%= link_to "Edit", edit_car_path(car), :method => :get, :title => "Edit #{car.location}" %> </td>
+    <% else %>
+        <td>
+            <%= link_to "Order", cars_order_path(car.id), :method => :post, :confirm => "You sure?", :title => "Order #{car.location}" %> </td>
+    <% end %>
+
+</tr>

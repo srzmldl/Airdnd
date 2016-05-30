@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   before_filter :admin_user, :only => [:destroy, :tripManage]
 
   def tripList
-  #  debugger
+    #debugger
     if signed_in? == false
       redirect_to signin_path, :notice => "Please sign in to look your trips"
       return
@@ -94,14 +94,13 @@ class UsersController < ApplicationController
     redirect_to(root_path) unless current_user.admin?
   end
 
-  def transferIndividual(allTrip, userName = "")
+  def transferIndividual(allTrip)
 #    debugger
     allTrip.each do |t|
       if t.resvType == 1
         tFlight = Flight.find_by_flightNum(t.identity)
         if tFlight != nil
           tFlight.id = t.id
-          tFilght.userName = userName
           @flightsTrip.push(tFlight)
         end
       elsif t.resvType == 2
@@ -112,10 +111,10 @@ class UsersController < ApplicationController
           @hotelsTrip.push(tHotel)
         end
       elsif t.resvType == 3
+       # debugger
         tCar = Car.find_by_location(t.identity)
         if tCar != nil
           tCar.id = t.id
-          tCar.userName = userName
           @carsTrip.push(tCar)
         end
       end

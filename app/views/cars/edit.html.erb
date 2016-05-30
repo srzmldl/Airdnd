@@ -1,0 +1,24 @@
+<h1>Edit car</h1>
+<%= form_for(@car) do |f| %>
+    <%= render 'shared/error_messages', :object => f.object %>
+    <div class="field">
+        <%= f.label :location, "位置" %><br />
+        <%= f.text_field :location %>
+    </div>
+    <div class="field">
+        <%= f.label :price, "价格"%><br />
+        <%= f.text_field :price %>
+    </div>
+    <div class="field">
+        <%= f.label :numCars, "出租车数" %><br />
+        <%= f.text_field :numCars %>
+    </div>
+    <div class="field">
+        <%= f.label :numAvail, "空闲出租车数" %><br />
+        <%= f.text_field :numAvail %>
+    </div>
+    <div class="actions">
+        <%= f.submit "更新" %>
+    </div>
+<% end %>
+

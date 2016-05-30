@@ -21,11 +21,19 @@
 <table>
     <tr>
         <th> 预定ID </th>
-        <th> 预定用户 </th>
         <th> 位置 </th>
         <th> 价格 </th>
         <th> 操作 </th>
     </tr>
+    
+    <% @carsTrip.each do |carsTrip| %>
+        <tr>
+            <td> <%= carsTrip.id %> </td>
+            <td> <%= carsTrip.location %> </td>
+            <td> <%= carsTrip.price %> </td>
+            <td> <%= link_to "delete", carsOrder_path(carsTrip.id), :method => :delete, :confirm => "You sure?", :title => "Order destroy" %>
+    </tr>
+    <% end %>
 </table>
 
 <h4> 已定航班 </h4>

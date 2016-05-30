@@ -32,7 +32,7 @@ class HotelsController < ApplicationController
   end
 
   def update
-    @hotel = Hotel.find(params[:format])
+    @hotel = Hotel.find(params[:id])
     if @hotel.update_attributes(hotel_params)
       flash[:success] = "Hotel updated"
       redirect_to hotels_path
@@ -69,6 +69,10 @@ class HotelsController < ApplicationController
     tripTmp = Reservation.find(params[:format])
     hotelTmp = Hotel.find_by_location(tripTmp.identity)
     tripTmp.destroy
+    if (hotelTmp == nil)
+      redirect_to manage_trip_path
+      return
+    end
     hotelTmp.numAvail = hotelTmp.numAvail + 1;
     hotelTmp.save
     flash[:success] = "Hotel order destroyed."
