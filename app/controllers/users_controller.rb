@@ -1,4 +1,5 @@
 # coding: utf-8
+require 'set'
 class UsersController < ApplicationController
   before_filter :authenticate, :only => [:edit, :update]
   before_filter :correct_user, :only => [:edit, :update]
@@ -15,7 +16,10 @@ class UsersController < ApplicationController
     @hotelsTrip = []
     @flightsTrip = []
     @carsTrip = []
+    @ifComplete = true
+    @tripPath = ""
     transferIndividual(allTrip)
+    checkComplete(@flightsTrip)
   end
 
   def tripManage
@@ -118,6 +122,64 @@ class UsersController < ApplicationController
           @carsTrip.push(tCar)
         end
       end
+    end
+  end
+
+  def checkComplete(flightsTrip)
+    nextCity = {}
+    cityFlag = {}
+    cityVis = {}
+    s1 = Set.new()
+    flightsTrip.each do |t|
+      nextCity[t.FromCity] = t.ArivCity
+      cityFlag[t.ArivCity] = true
+      cityVis[t.FromCity] = false
+      cityVis[t.ArivCity] = false
+      s1.add(t.ArivCity)
+      s1.add(t.FromCity)
+    end
+    if s1.empty?
+      return
+    end
+    startCity = []
+    cnt = 0
+    s1.each do |t|
+      if cityFlag[t] != true
+        now = t
+        cnt += 1
+        nowPath = ""
+        while now != nil || cityVis[now] == false
+          cityVis[now] = true
+          nowPath += now
+          now = nextCity[now]
+          if now != nil && cityVis[now] == false
+            nowPath += '-->'
+          end
+        end
+        nowPath += "||"
+        @tripPath += nowPath
+      end
+    end
+
+    s1.each do |t|
+      if cityVis[t] == false
+        now = t
+        cnt += 1
+        nowPath = ""
+        while now != nil || cityVis[now] == false
+          cityVis[now] = true
+          nowPath += now
+          now = nextCity[now]
+          if now != nil && cityVis[now] == false
+            nowPath += '-->'
+          end
+        end
+        nowPath += "||"
+        @tripPath += nowPath
+      end
+    end
+    if cnt > 1
+      @ifComplete = false
     end
   end
 
