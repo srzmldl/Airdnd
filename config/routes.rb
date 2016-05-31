@@ -27,6 +27,10 @@ Rails.application.routes.draw do
   resources :cars
   post '/cars/order' => 'cars#order'
   delete '/carsOrder' => 'cars#destroyOrder'
+  
+  resources :flights
+  post '/flights/order' => 'flights#order'
+  delete '/flightsOrder' => 'flights#destroyOrder'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

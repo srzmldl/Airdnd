@@ -1,0 +1,33 @@
+<h1>Edit flight</h1>
+<%= form_for(@flight) do |f| %>
+    <%= render 'shared/error_messages', :object => f.object %>
+    <div class="field">
+        <%= f.label :flightNum, "航班号" %><br />
+        <%= f.text_field :flightNum %>
+    </div>
+    <div class="field">
+        <%= f.label :price, "价格"%><br />
+        <%= f.text_field :price %>
+    </div>
+    <div class="field">
+        <%= f.label :numSeats, "座位数" %><br />
+        <%= f.text_field :numSeats %>
+    </div>
+    <div class="field">
+        <%= f.label :numAvail, "空闲座位数" %><br />
+        <%= f.text_field :numAvail %>
+    </div>
+    <div class="field">
+        <%= f.label :FromCity, "始发城市" %><br />
+        <%= f.text_field :FromCity %>
+    </div>
+    <div class="field">
+        <%= f.label :ArivCity, "到达城市" %><br />
+        <%= f.text_field :ArivCity %>
+    </div>
+    <div class="actions">
+        <%= f.submit "更新" %>
+    </div>
+<% end %>
+
+

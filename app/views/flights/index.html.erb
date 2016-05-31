@@ -1,0 +1,24 @@
+<h1> All Flights  </h1>
+
+<% if current_user != nil && current_user.admin? %>
+<div class="field">
+          <%= link_to "添加航班", new_flight_path, :class => "index_add_button round" %>
+</div>
+<% end %>
+
+<%= will_paginate %>
+<table>
+    <tr>
+        <th> 航班号 </th>
+        <th> 出发城市 </th>
+        <th> 到达城市 </th>
+        <th> 价格 </th>
+        <th> 空闲座位数目 </th>
+        <th> 总座位数目 </th>
+        <th> 操作 </th>
+    </tr>
+    <%= render @flights %>
+</table>
+
+<%= will_paginate %>
+

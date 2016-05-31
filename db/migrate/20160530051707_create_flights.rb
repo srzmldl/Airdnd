@@ -5,8 +5,8 @@ class CreateFlights < ActiveRecord::Migration
       t.integer :price
       t.integer :numSeats
       t.integer :numAvail
-      t.integer :FromCity
-      t.integer :ArivCity
+      t.string :FromCity
+      t.string :ArivCity
 
       t.timestamps null: false
     end

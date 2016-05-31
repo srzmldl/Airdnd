@@ -1,0 +1,17 @@
+<tr>
+    <td> <%= flight.flightNum %> </td>
+    <td> <%= flight.FromCity %> </td>
+    <td> <%= flight.ArivCity %> </td>
+    <td> <%= flight.price %> </td>
+    <td> <%= flight.numSeats %> </td>
+    <td> <%= flight.numAvail %> </td>
+    <% if current_user != nil && current_user.admin? %>
+        <td> <%= link_to "delete", flight, :method => :delete, :confirm => "You sure?", :title => "Delete #{flight.flightNum}" %>
+        | <%= link_to "Edit", edit_flight_path(flight), :method => :get, :title => "Edit #{flight.flightNum}" %> </td>
+    <% else %>
+        <td>
+            <%= link_to "Order", flights_order_path(flight.id), :method => :post, :confirm => "You sure?", :title => "Order #{flight.flightNum}" %> </td>
+    <% end %>
+
+</tr>
+

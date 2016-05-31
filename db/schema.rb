@@ -27,8 +27,8 @@ ActiveRecord::Schema.define(version: 20160530112836) do
     t.integer  "price"
     t.integer  "numSeats"
     t.integer  "numAvail"
-    t.integer  "FromCity"
-    t.integer  "ArivCity"
+    t.string   "FromCity"
+    t.string   "ArivCity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

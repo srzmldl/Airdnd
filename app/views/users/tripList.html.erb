@@ -40,10 +40,22 @@
 <table>
     <tr>
         <th> 预定ID </th>
-        <th> 价格 </th>
         <th> 航班号 </th>
         <th> 出发城市 </th>
         <th> 到达城市 </th>
+        <th> 价格 </th>
         <th> 操作 </th>
     </tr>
+    
+    <% @flightsTrip.each do |flightsTrip| %>
+        <tr>
+            <td> <%= flightsTrip.id %> </td>
+            <td> <%= flightsTrip.flightNum %> </td>
+            <td> <%= flightsTrip.FromCity %> </td>
+            <td> <%= flightsTrip.ArivCity %> </td>
+            <td> <%= flightsTrip.price %> </td>
+            <td> <%= link_to "delete", flightsOrder_path(flightsTrip.id), :method => :delete, :confirm => "You sure?", :title => "Order destroy" %>
+    </tr>
+    <% end %>
 </table>
+
