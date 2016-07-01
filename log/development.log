@@ -39438,3 +39438,2531 @@ Processing by PagesController#home as HTML
   Rendered layouts/_header.html.erb (1.6ms)
   Rendered layouts/_footer.html.erb (0.3ms)
 Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 09:45:17 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_stylesheets.html.erb (43.8ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 90ms (Views: 89.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/cars.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-31 09:45:17 +0800
+
+
+Started GET "/assets/flights.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-31 09:45:17 +0800
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-31 09:45:17 +0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-31 09:45:17 +0800
+
+
+Started GET "/assets/hotels.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-31 09:45:17 +0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-31 09:45:17 +0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-31 09:45:17 +0800
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-31 09:45:17 +0800
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-31 09:45:17 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-31 09:45:17 +0800
+
+
+Started GET "/assets/cars.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-31 09:45:17 +0800
+
+
+Started GET "/assets/flights.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-31 09:45:17 +0800
+
+
+Started GET "/assets/hotels.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-31 09:45:17 +0800
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-31 09:45:17 +0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-31 09:45:17 +0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-31 09:45:17 +0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-31 09:45:17 +0800
+
+
+Started GET "/hotels" for ::1 at 2016-05-31 09:45:19 +0800
+Processing by HotelsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "hotels"
+  [1m[36mHotel Load (0.1ms)[0m  [1mSELECT  "hotels".* FROM "hotels" LIMIT 30 OFFSET 0[0m
+  Rendered hotels/_hotel.html.erb (0.7ms)
+  Rendered hotels/index.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_stylesheets.html.erb (3.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hotels/new" for ::1 at 2016-05-31 09:45:21 +0800
+Processing by HotelsController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered hotels/new.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_stylesheets.html.erb (5.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 42ms (Views: 41.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 09:45:23 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_stylesheets.html.erb (3.7ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 27ms (Views: 27.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 09:45:24 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_stylesheets.html.erb (3.2ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/hotels" for ::1 at 2016-05-31 09:45:25 +0800
+Processing by HotelsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "hotels"
+  [1m[36mHotel Load (0.1ms)[0m  [1mSELECT  "hotels".* FROM "hotels" LIMIT 30 OFFSET 0[0m
+  Rendered hotels/_hotel.html.erb (0.7ms)
+  Rendered hotels/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_stylesheets.html.erb (3.5ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 32ms (Views: 31.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 09:45:26 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_stylesheets.html.erb (4.9ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 40ms (Views: 39.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/flights" for ::1 at 2016-05-31 09:45:27 +0800
+Processing by FlightsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "flights"
+  [1m[36mFlight Load (0.2ms)[0m  [1mSELECT  "flights".* FROM "flights" LIMIT 30 OFFSET 0[0m
+  Rendered flights/_flight.html.erb (2.5ms)
+  Rendered flights/index.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_stylesheets.html.erb (6.6ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 51ms (Views: 49.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 09:45:28 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_stylesheets.html.erb (6.4ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 41ms (Views: 40.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-05-31 10:28:08 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (105.1ms)
+  Rendered layouts/_stylesheets.html.erb (251.3ms)
+  Rendered layouts/_header.html.erb (3.1ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 903ms (Views: 867.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:28:31 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_stylesheets.html.erb (3.6ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 61ms (Views: 60.2ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/signout" for ::1 at 2016-05-31 10:28:52 +0800
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+8z7I+frpO7h4IvUoa5ioDLMlkOM3rdI9I//ovkrzBs8hO7cZoWeAm8TFDKNioncXiHS8HMwVlUuvQjbhsWJjg=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-31 10:28:52 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_stylesheets.html.erb (6.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 40.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/signin" for ::1 at 2016-05-31 10:28:56 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (162.4ms)
+  Rendered layouts/_stylesheets.html.erb (17.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (3.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 263ms (Views: 262.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/sessions" for ::1 at 2016-05-31 10:30:51 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IUah4Z/Jt0RxJMigmJrvvyrqciEAiHVfb1guMEQwcP/mDrQeHqeNqP/XV0a0vgTDRgc2kv9mlEK1atlJO941ag==", "session"=>{"name"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"登陆"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1  [["name", "admin"]]
+  Rendered sessions/new.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_stylesheets.html.erb (8.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 58ms (Views: 55.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/sessions" for ::1 at 2016-05-31 10:31:03 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JtCxFDQsKDikInmJFl+Yj/TLE2uVuyIzjJOIUrnGhMjhmKTrtUIS1CrR5m86e3PzmCZX2GpVwy5WoX8rxijBXQ==", "session"=>{"name"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"登陆"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1[0m  [["name", "admin"]]
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for ::1 at 2016-05-31 10:31:03 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_stylesheets.html.erb (5.3ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 86ms (Views: 84.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:31:52 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_stylesheets.html.erb (4.7ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 32ms (Views: 31.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2016-05-31 10:32:21 +0800
+Processing by UsersController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" LIMIT 30 OFFSET 0
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/_user.html.erb (3.8ms)
+  Rendered users/index.html.erb within layouts/application (31.4ms)
+  Rendered layouts/_stylesheets.html.erb (13.8ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 93ms (Views: 91.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/trip.user01" for ::1 at 2016-05-31 10:32:24 +0800
+Processing by UsersController#tripList as 
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mReservation Load (0.3ms)[0m  [1mSELECT "reservations".* FROM "reservations" WHERE "reservations"."userName" = ?[0m  [["userName", "user01"]]
+  [1m[35mHotel Load (0.2ms)[0m  SELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1  [["location", "hotel01"]]
+  [1m[36mHotel Load (0.1ms)[0m  [1mSELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1[0m  [["location", "hotel02"]]
+  [1m[35mHotel Load (0.1ms)[0m  SELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1  [["location", "hotel03"]]
+  [1m[36mCar Load (0.2ms)[0m  [1mSELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1[0m  [["location", "car01"]]
+  [1m[35mCar Load (0.1ms)[0m  SELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1  [["location", "car03"]]
+  [1m[36mCar Load (0.1ms)[0m  [1mSELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1[0m  [["location", "car02"]]
+  [1m[35mFlight Load (0.2ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1  [["flightNum", "flight01"]]
+  [1m[36mFlight Load (0.1ms)[0m  [1mSELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1[0m  [["flightNum", "flight04"]]
+  [1m[35mFlight Load (0.1ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1  [["flightNum", "flight02"]]
+  [1m[36mFlight Load (0.1ms)[0m  [1mSELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1[0m  [["flightNum", "flight03"]]
+  Rendered users/tripList.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_stylesheets.html.erb (7.5ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 161ms (Views: 66.4ms | ActiveRecord: 3.0ms)
+
+
+Started DELETE "/users/4" for ::1 at 2016-05-31 10:32:54 +0800
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UmVBoHh5GsVzgVe6OSONWcqk2M1aLsy5VcdjNjZVGuuVLVRf+RcgKf1yyFwVB2YlpkmcfqXALaSP9ZRPSbtffg==", "id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 4]]
+  [1m[35m (139.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/users
+Completed 302 Found in 143ms (ActiveRecord: 139.7ms)
+
+
+Started GET "/users" for ::1 at 2016-05-31 10:32:54 +0800
+Processing by UsersController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" LIMIT 30 OFFSET 0
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/_user.html.erb (2.6ms)
+  Rendered users/index.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_stylesheets.html.erb (5.1ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 39.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/2" for ::1 at 2016-05-31 10:33:32 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_stylesheets.html.erb (6.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/trip.user01" for ::1 at 2016-05-31 10:33:37 +0800
+Processing by UsersController#tripList as 
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mReservation Load (0.1ms)[0m  [1mSELECT "reservations".* FROM "reservations" WHERE "reservations"."userName" = ?[0m  [["userName", "user01"]]
+  [1m[35mHotel Load (0.1ms)[0m  SELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1  [["location", "hotel01"]]
+  [1m[36mHotel Load (0.1ms)[0m  [1mSELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1[0m  [["location", "hotel02"]]
+  [1m[35mHotel Load (0.1ms)[0m  SELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1  [["location", "hotel03"]]
+  [1m[36mCar Load (0.1ms)[0m  [1mSELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1[0m  [["location", "car01"]]
+  [1m[35mCar Load (0.1ms)[0m  SELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1  [["location", "car03"]]
+  [1m[36mCar Load (0.1ms)[0m  [1mSELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1[0m  [["location", "car02"]]
+  [1m[35mFlight Load (0.1ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1  [["flightNum", "flight01"]]
+  [1m[36mFlight Load (0.1ms)[0m  [1mSELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1[0m  [["flightNum", "flight04"]]
+  [1m[35mFlight Load (0.1ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1  [["flightNum", "flight02"]]
+  [1m[36mFlight Load (0.1ms)[0m  [1mSELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1[0m  [["flightNum", "flight03"]]
+  Rendered users/tripList.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_stylesheets.html.erb (3.7ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 41ms (Views: 36.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/trip.user01" for ::1 at 2016-05-31 10:33:53 +0800
+Processing by UsersController#tripList as 
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mReservation Load (0.1ms)[0m  [1mSELECT "reservations".* FROM "reservations" WHERE "reservations"."userName" = ?[0m  [["userName", "user01"]]
+  [1m[35mHotel Load (0.1ms)[0m  SELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1  [["location", "hotel01"]]
+  [1m[36mHotel Load (0.1ms)[0m  [1mSELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1[0m  [["location", "hotel02"]]
+  [1m[35mHotel Load (0.1ms)[0m  SELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1  [["location", "hotel03"]]
+  [1m[36mCar Load (0.1ms)[0m  [1mSELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1[0m  [["location", "car01"]]
+  [1m[35mCar Load (0.1ms)[0m  SELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1  [["location", "car03"]]
+  [1m[36mCar Load (0.1ms)[0m  [1mSELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1[0m  [["location", "car02"]]
+  [1m[35mFlight Load (0.1ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1  [["flightNum", "flight01"]]
+  [1m[36mFlight Load (0.0ms)[0m  [1mSELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1[0m  [["flightNum", "flight04"]]
+  [1m[35mFlight Load (0.0ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1  [["flightNum", "flight02"]]
+  [1m[36mFlight Load (0.1ms)[0m  [1mSELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1[0m  [["flightNum", "flight03"]]
+  Rendered users/tripList.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_stylesheets.html.erb (3.9ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 46ms (Views: 41.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/trip.user02" for ::1 at 2016-05-31 10:33:56 +0800
+Processing by UsersController#tripList as 
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mReservation Load (0.1ms)[0m  [1mSELECT "reservations".* FROM "reservations" WHERE "reservations"."userName" = ?[0m  [["userName", "user02"]]
+  [1m[35mHotel Load (0.1ms)[0m  SELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1  [["location", "hotel01"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1[0m  [["location", "hotel01"]]
+  [1m[35mHotel Load (0.1ms)[0m  SELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1  [["location", "hotel02"]]
+  [1m[36mCar Load (0.1ms)[0m  [1mSELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1[0m  [["location", "car01"]]
+  [1m[35mCar Load (0.1ms)[0m  SELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1  [["location", "car02"]]
+  Rendered users/tripList.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_stylesheets.html.erb (5.8ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 56ms (Views: 50.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/signup" for ::1 at 2016-05-31 10:34:05 +0800
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (17.1ms)
+  Rendered users/new.html.erb within layouts/application (37.8ms)
+  Rendered layouts/_stylesheets.html.erb (7.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 110ms (Views: 108.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/users" for ::1 at 2016-05-31 10:34:19 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iL+YVzeLOnH/Gjs3KjaQAkiprua+ore9oHdyQPm4k29P942otuUAnXHppNEGEnt+JETqVUFMVqB6RYU5hlbW+g==", "user"=>{"name"=>"user03", "email"=>"user03@a.a", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."name" = 'user03' LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user03@a.a') LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("name", "email", "salt", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "user03"], ["email", "user03@a.a"], ["salt", "3928e1e00b8fb903cdc61a62f3d6d350b301836dfcc4826de9cc74992f45ef92"], ["encrypted_password", "f1fecf2c50a3c54f2c0792321a8646df092072cc5fda3253e4e305b9b992d25b"], ["created_at", "2016-05-31 02:34:19.259847"], ["updated_at", "2016-05-31 02:34:19.259847"]]
+  [1m[35m (280.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/5
+Completed 302 Found in 368ms (ActiveRecord: 281.0ms)
+
+
+Started GET "/users/5" for ::1 at 2016-05-31 10:34:19 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_stylesheets.html.erb (6.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 57ms (Views: 55.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:34:21 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_stylesheets.html.erb (5.6ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2016-05-31 10:34:22 +0800
+Processing by UsersController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 30 OFFSET 0[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/_user.html.erb (2.5ms)
+  Rendered users/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_stylesheets.html.erb (5.4ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 50ms (Views: 48.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/trip.user03" for ::1 at 2016-05-31 10:34:24 +0800
+Processing by UsersController#tripList as 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mReservation Load (0.1ms)[0m  SELECT "reservations".* FROM "reservations" WHERE "reservations"."userName" = ?  [["userName", "user03"]]
+  Rendered users/tripList.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_stylesheets.html.erb (6.6ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 59ms (Views: 56.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:34:26 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_stylesheets.html.erb (5.3ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2016-05-31 10:34:26 +0800
+Processing by UsersController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 30 OFFSET 0[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/_user.html.erb (2.4ms)
+  Rendered users/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_stylesheets.html.erb (5.4ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 40ms (Views: 38.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:35:23 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_stylesheets.html.erb (6.1ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 42ms (Views: 40.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/hotels" for ::1 at 2016-05-31 10:35:24 +0800
+Processing by HotelsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "hotels"[0m
+  [1m[35mHotel Load (0.2ms)[0m  SELECT  "hotels".* FROM "hotels" LIMIT 30 OFFSET 0
+  Rendered hotels/_hotel.html.erb (3.9ms)
+  Rendered hotels/index.html.erb within layouts/application (125.6ms)
+  Rendered layouts/_stylesheets.html.erb (7.4ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 362ms (Views: 360.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/hotels/new" for ::1 at 2016-05-31 10:35:49 +0800
+Processing by HotelsController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered hotels/new.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_stylesheets.html.erb (7.9ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 100ms (Views: 98.7ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/hotels" for ::1 at 2016-05-31 10:35:58 +0800
+Processing by HotelsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nfdF4gQzMTfnSe8O/kDabs5K4V7pty3nKB3KenXzn7xav1AdhV0L22m6cOjSZDESoqel7RZZzPryLz0DCh3aKQ==", "hotel"=>{"location"=>"hotel04", "price"=>"400", "numRooms"=>"40", "numAvail"=>"40"}, "commit"=>"确认添加"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mHotel Exists (0.1ms)[0m  SELECT  1 AS one FROM "hotels" WHERE "hotels"."location" = 'hotel04' LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "hotels" ("location", "price", "numRooms", "numAvail", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["location", "hotel04"], ["price", 400], ["numRooms", 40], ["numAvail", 40], ["created_at", "2016-05-31 02:35:58.122677"], ["updated_at", "2016-05-31 02:35:58.122677"]]
+  [1m[35m (340.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/hotels
+Completed 302 Found in 347ms (ActiveRecord: 340.9ms)
+
+
+Started GET "/hotels" for ::1 at 2016-05-31 10:35:58 +0800
+Processing by HotelsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "hotels"
+  [1m[36mHotel Load (0.2ms)[0m  [1mSELECT  "hotels".* FROM "hotels" LIMIT 30 OFFSET 0[0m
+  Rendered hotels/_hotel.html.erb (2.5ms)
+  Rendered hotels/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_stylesheets.html.erb (7.1ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 50ms (Views: 48.4ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/hotels/4" for ::1 at 2016-05-31 10:36:10 +0800
+Processing by HotelsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gVakfK8waksxV2ugimsLr0pR5l4ipZrAXYjfgI39HtxGHrGDLl5Qp7+k9EamT+DTJryi7d1Le92Huij58hNbSQ==", "id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mHotel Load (0.1ms)[0m  [1mSELECT  "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "hotels" WHERE "hotels"."id" = ?[0m  [["id", 4]]
+  [1m[35m (102.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/hotels
+Completed 302 Found in 106ms (ActiveRecord: 102.7ms)
+
+
+Started GET "/hotels" for ::1 at 2016-05-31 10:36:10 +0800
+Processing by HotelsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "hotels"
+  [1m[36mHotel Load (0.1ms)[0m  [1mSELECT  "hotels".* FROM "hotels" LIMIT 30 OFFSET 0[0m
+  Rendered hotels/_hotel.html.erb (1.0ms)
+  Rendered hotels/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_stylesheets.html.erb (4.8ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 34ms (Views: 33.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hotels/3/edit" for ::1 at 2016-05-31 10:36:12 +0800
+Processing by HotelsController#edit as HTML
+  Parameters: {"authenticity_token"=>"M0oP1+SN5ISEyKj0nI/QqURBZa3KT+P41580DJ6B12j0AhooZePeaAo7NxKwqzvVKKwhHjWhAuUNrcN14W+S/Q==", "id"=>"3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mHotel Load (0.1ms)[0m  [1mSELECT  "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered hotels/edit.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_stylesheets.html.erb (4.9ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 79ms (Views: 77.4ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/hotels/3" for ::1 at 2016-05-31 10:36:18 +0800
+Processing by HotelsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o7Vi11zJBc5zx+4h8ZGRbWnfXYuZdOerK0znjo0OZSdk/Xco3ac/Iv00ccfdtXoRBTIZOGaaBrbxfhD38uAgsg==", "hotel"=>{"location"=>"hotel03", "price"=>"40", "numRooms"=>"30", "numAvail"=>"29"}, "commit"=>"更新", "id"=>"3"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mHotel Load (0.1ms)[0m  [1mSELECT  "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mHotel Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "hotels" WHERE ("hotels"."location" = 'hotel03' AND "hotels"."id" != 3) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "hotels" SET "price" = ?, "updated_at" = ? WHERE "hotels"."id" = ?  [["price", 40], ["updated_at", "2016-05-31 02:36:18.098350"], ["id", 3]]
+  [1m[36m (228.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/hotels
+Completed 302 Found in 236ms (ActiveRecord: 228.8ms)
+
+
+Started GET "/hotels" for ::1 at 2016-05-31 10:36:18 +0800
+Processing by HotelsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "hotels"[0m
+  [1m[35mHotel Load (0.1ms)[0m  SELECT  "hotels".* FROM "hotels" LIMIT 30 OFFSET 0
+  Rendered hotels/_hotel.html.erb (1.0ms)
+  Rendered hotels/index.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_stylesheets.html.erb (5.1ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 38ms (Views: 36.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/hotels/new" for ::1 at 2016-05-31 10:36:42 +0800
+Processing by HotelsController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered hotels/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_stylesheets.html.erb (3.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 28ms (Views: 27.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/hotels" for ::1 at 2016-05-31 10:36:48 +0800
+Processing by HotelsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b4TZK2GBgClPNp4G0ZFofup/dTj6b2pI9Q5wa35rLVaozMzU4O+6xcHFAeD9tYMChpIxiwWBi1UvPIcSAYVoww==", "hotel"=>{"location"=>"hotel01", "price"=>"10", "numRooms"=>"10", "numAvail"=>"10"}, "commit"=>"确认添加"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mHotel Exists (0.2ms)[0m  SELECT  1 AS one FROM "hotels" WHERE "hotels"."location" = 'hotel01' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered shared/_error_messages.html.erb (0.8ms)
+  Rendered hotels/new.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_stylesheets.html.erb (4.7ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 48ms (Views: 43.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:37:10 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_stylesheets.html.erb (4.3ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/hotels" for ::1 at 2016-05-31 10:37:12 +0800
+Processing by HotelsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "hotels"
+  [1m[36mHotel Load (0.2ms)[0m  [1mSELECT  "hotels".* FROM "hotels" LIMIT 30 OFFSET 0[0m
+  Rendered hotels/_hotel.html.erb (1.4ms)
+  Rendered hotels/index.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_stylesheets.html.erb (6.6ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 48ms (Views: 46.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:37:46 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_stylesheets.html.erb (5.7ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 40ms (Views: 39.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cars" for ::1 at 2016-05-31 10:37:47 +0800
+Processing by CarsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "cars"
+  [1m[36mCar Load (0.2ms)[0m  [1mSELECT  "cars".* FROM "cars" LIMIT 30 OFFSET 0[0m
+  Rendered cars/_car.html.erb (3.0ms)
+  Rendered cars/index.html.erb within layouts/application (31.4ms)
+  Rendered layouts/_stylesheets.html.erb (5.9ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 85ms (Views: 83.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:37:48 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_stylesheets.html.erb (6.1ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 40ms (Views: 39.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/flights" for ::1 at 2016-05-31 10:38:01 +0800
+Processing by FlightsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "flights"
+  [1m[36mFlight Load (0.2ms)[0m  [1mSELECT  "flights".* FROM "flights" LIMIT 30 OFFSET 0[0m
+  Rendered flights/_flight.html.erb (3.6ms)
+  Rendered flights/index.html.erb within layouts/application (27.3ms)
+  Rendered layouts/_stylesheets.html.erb (14.6ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 101ms (Views: 98.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:38:03 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_stylesheets.html.erb (6.4ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 43ms (Views: 42.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cars" for ::1 at 2016-05-31 10:38:04 +0800
+Processing by CarsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "cars"
+  [1m[36mCar Load (0.1ms)[0m  [1mSELECT  "cars".* FROM "cars" LIMIT 30 OFFSET 0[0m
+  Rendered cars/_car.html.erb (0.8ms)
+  Rendered cars/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_stylesheets.html.erb (4.1ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:38:05 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_stylesheets.html.erb (5.5ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 37ms (Views: 36.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/manage/trip" for ::1 at 2016-05-31 10:38:18 +0800
+Processing by UsersController#tripManage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mReservation Load (0.5ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered users/tripManage.html.erb within layouts/application (9.4ms)
+  Rendered layouts/_stylesheets.html.erb (6.6ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 66ms (Views: 64.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:38:19 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_stylesheets.html.erb (6.8ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 44ms (Views: 43.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/edit" for ::1 at 2016-05-31 10:38:20 +0800
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/edit.html.erb within layouts/application (15.0ms)
+  Rendered layouts/_stylesheets.html.erb (7.2ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 91ms (Views: 88.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:38:21 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_stylesheets.html.erb (6.6ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for ::1 at 2016-05-31 10:38:48 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.5ms)
+  Rendered layouts/_stylesheets.html.erb (6.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:38:49 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_stylesheets.html.erb (5.3ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 36ms (Views: 35.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/about" for ::1 at 2016-05-31 10:38:52 +0800
+Processing by PagesController#about as HTML
+  Rendered pages/about.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_stylesheets.html.erb (7.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 60ms (Views: 59.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:38:54 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_stylesheets.html.erb (8.7ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 52ms (Views: 51.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/1/edit" for ::1 at 2016-05-31 10:39:16 +0800
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/edit.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_stylesheets.html.erb (16.1ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 58ms (Views: 55.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:39:20 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_stylesheets.html.erb (6.0ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 39.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/manage/trip" for ::1 at 2016-05-31 10:40:16 +0800
+Processing by UsersController#tripManage as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mReservation Load (0.2ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered users/tripManage.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_stylesheets.html.erb (6.0ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 48ms (Views: 46.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/trip.user01" for ::1 at 2016-05-31 10:40:39 +0800
+Processing by UsersController#tripList as 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mReservation Load (0.1ms)[0m  SELECT "reservations".* FROM "reservations" WHERE "reservations"."userName" = ?  [["userName", "user01"]]
+  [1m[36mHotel Load (0.1ms)[0m  [1mSELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1[0m  [["location", "hotel01"]]
+  [1m[35mHotel Load (0.1ms)[0m  SELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1  [["location", "hotel02"]]
+  [1m[36mHotel Load (0.0ms)[0m  [1mSELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1[0m  [["location", "hotel03"]]
+  [1m[35mCar Load (0.0ms)[0m  SELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1  [["location", "car01"]]
+  [1m[36mCar Load (0.0ms)[0m  [1mSELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1[0m  [["location", "car03"]]
+  [1m[35mCar Load (0.0ms)[0m  SELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1  [["location", "car02"]]
+  [1m[36mFlight Load (0.0ms)[0m  [1mSELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1[0m  [["flightNum", "flight01"]]
+  [1m[35mFlight Load (0.0ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1  [["flightNum", "flight04"]]
+  [1m[36mFlight Load (0.0ms)[0m  [1mSELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1[0m  [["flightNum", "flight02"]]
+  [1m[35mFlight Load (0.1ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1  [["flightNum", "flight03"]]
+  Rendered users/tripList.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_stylesheets.html.erb (3.7ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 40ms (Views: 34.7ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/hotelsOrder.1" for ::1 at 2016-05-31 10:40:51 +0800
+Processing by HotelsController#destroyOrder as 
+  Parameters: {"authenticity_token"=>"XxMUX9MUKZB+GC5q425U8GjgYkJ8cNOsSoiAXcViWtCYWwGgUnoTfPDrsYzPSr+MBA0m8YOeMrGQunckuowfRQ=="}
+  [1m[36mReservation Load (0.2ms)[0m  [1mSELECT  "reservations".* FROM "reservations" WHERE "reservations"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mHotel Load (0.1ms)[0m  SELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1  [["location", "hotel01"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "reservations" WHERE "reservations"."id" = ?  [["id", 1]]
+  [1m[36m (108.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mHotel Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "hotels" WHERE ("hotels"."location" = 'hotel01' AND "hotels"."id" != 1) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "hotels" SET "numAvail" = ?, "updated_at" = ? WHERE "hotels"."id" = ?  [["numAvail", 1], ["updated_at", "2016-05-31 02:40:51.604816"], ["id", 1]]
+  [1m[36m (72.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/manage/trip
+Completed 302 Found in 189ms (ActiveRecord: 182.5ms)
+
+
+Started GET "/manage/trip" for ::1 at 2016-05-31 10:40:51 +0800
+Processing by UsersController#tripManage as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mReservation Load (0.2ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered users/tripManage.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_stylesheets.html.erb (5.6ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:41:31 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_stylesheets.html.erb (6.6ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 106ms (Views: 104.8ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/signout" for ::1 at 2016-05-31 10:41:33 +0800
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"CFw52MB0H17qDBUW8kcKcG+IqK2Gx2gt4judlnrYm7/PFCwnQRolsmT/ivDeY+EMA2XsHnkpiTA4CWrvBTbeKg=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-31 10:41:33 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_stylesheets.html.erb (5.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 38ms (Views: 37.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/signup" for ::1 at 2016-05-31 10:41:35 +0800
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.1ms)
+  Rendered users/new.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_stylesheets.html.erb (6.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2016-05-31 10:42:09 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Mg6IxFymNqbAe99xnKQJJqB+JEQXQRCnw8YDVtBPkpj1Rp073cgMSk6IQJewgOJazJNg9+iv8boZ9PQvr6HXDQ==", "user"=>{"name"=>"user02", "email"=>"aa.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."name" = 'user02' LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('aa.com') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_error_messages.html.erb (3.3ms)
+  Rendered users/new.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_stylesheets.html.erb (6.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 44.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users" for ::1 at 2016-05-31 10:42:55 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Hkudj5AZXGw/8QeUChMPV/diLYsK06//afdM4oahNhLZA4hwEXdmgLECmHImN+Qrm49pOPU9TuKzxbub+U9zhw==", "user"=>{"name"=>"user05", "email"=>"user", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."name" = 'user05' LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_error_messages.html.erb (1.5ms)
+  Rendered users/new.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_stylesheets.html.erb (3.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 34ms (Views: 30.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for ::1 at 2016-05-31 10:43:06 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1AyJD2S8ix7BTgRh3OjCXAjwRq8EqHOcD6aOq5E+D/MTRJzw5dKx8k+9m4fwzCkgZB0CHPtGkoHVlHnS7tBKZg==", "user"=>{"name"=>"user05", "email"=>"user05#a.a", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."name" = 'user05' LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user05#a.a') LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered shared/_error_messages.html.erb (0.7ms)
+  Rendered users/new.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_stylesheets.html.erb (5.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 43ms (Views: 37.9ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for ::1 at 2016-05-31 10:43:16 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uGQeJVJLsEzu/Ed9rPXsZkVmyP6/ZRQQOR4/ZJOYb61/LAva0yWKoGAP2JuA0QcaKYuMTUCL9Q3jLMgd7HYqOA==", "user"=>{"name"=>"user05", "email"=>"user05@a.a", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."name" = 'user05' LIMIT 1
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('user05@a.a') LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("name", "email", "salt", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["name", "user05"], ["email", "user05@a.a"], ["salt", "6be15df49cd85b973fb7d5f3805c1963ceca643b81eb0be700759f5b4260fb14"], ["encrypted_password", "1af939ee7781de19bbda43be4fd2d1ea8d862834f1b20c9298099de545ff075f"], ["created_at", "2016-05-31 02:43:16.671760"], ["updated_at", "2016-05-31 02:43:16.671760"]]
+  [1m[36m (385.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 401ms (ActiveRecord: 386.3ms)
+
+
+Started GET "/users/6" for ::1 at 2016-05-31 10:43:17 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_stylesheets.html.erb (5.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 34ms (Views: 33.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:43:35 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_stylesheets.html.erb (3.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 27ms (Views: 26.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/signin" for ::1 at 2016-05-31 10:43:37 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_stylesheets.html.erb (3.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 27ms (Views: 26.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/sessions" for ::1 at 2016-05-31 10:43:43 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vmiXRRo2aYYhL76O1vOfuG9cYR2NIKTbuoUon+ew37Z5IIK6m1hTaq/cIWj613TEA7ElrnLORcZgt9/mmF6aIw==", "session"=>{"name"=>"user05", "password"=>"[FILTERED]"}, "commit"=>"登陆"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1[0m  [["name", "user05"]]
+Redirected to http://localhost:3000/users/6
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/users/6" for ::1 at 2016-05-31 10:43:43 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered users/show.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_stylesheets.html.erb (4.1ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:43:45 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_stylesheets.html.erb (3.9ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 28ms (Views: 27.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/hotels" for ::1 at 2016-05-31 10:43:47 +0800
+Processing by HotelsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "hotels"
+  [1m[36mHotel Load (0.1ms)[0m  [1mSELECT  "hotels".* FROM "hotels" LIMIT 30 OFFSET 0[0m
+  Rendered hotels/_hotel.html.erb (1.0ms)
+  Rendered hotels/index.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_stylesheets.html.erb (5.9ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 47ms (Views: 45.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/hotels/order.1" for ::1 at 2016-05-31 10:44:22 +0800
+Processing by HotelsController#order as 
+  Parameters: {"authenticity_token"=>"7zjiOzWzLHckyX/t1eQ9W8C+07myfRhk7PWhTb3VFREocPfEtN0Wm6o64Av5wNYnrFOXCk2T+Xk2x1Y0wjtQhA=="}
+  [1m[35mHotel Load (0.1ms)[0m  SELECT  "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "reservations" ("userName", "resvType", "identity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["userName", "user05"], ["resvType", 2], ["identity", "hotel01"], ["created_at", "2016-05-31 02:44:22.331640"], ["updated_at", "2016-05-31 02:44:22.331640"]]
+  [1m[35m (227.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mHotel Exists (0.2ms)[0m  SELECT  1 AS one FROM "hotels" WHERE ("hotels"."location" = 'hotel01' AND "hotels"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "hotels" SET "numAvail" = ?, "updated_at" = ? WHERE "hotels"."id" = ?[0m  [["numAvail", 0], ["updated_at", "2016-05-31 02:44:22.562227"], ["id", 1]]
+  [1m[35m (140.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/hotels
+Completed 302 Found in 376ms (ActiveRecord: 368.7ms)
+
+
+Started GET "/hotels" for ::1 at 2016-05-31 10:44:22 +0800
+Processing by HotelsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "hotels"
+  [1m[36mHotel Load (0.1ms)[0m  [1mSELECT  "hotels".* FROM "hotels" LIMIT 30 OFFSET 0[0m
+  Rendered hotels/_hotel.html.erb (0.9ms)
+  Rendered hotels/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_stylesheets.html.erb (5.6ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/hotels/order.1" for ::1 at 2016-05-31 10:44:24 +0800
+Processing by HotelsController#order as 
+  Parameters: {"authenticity_token"=>"tAXp4XNtg/4VgAaIARiJZyK/TxozIPio0R+/+tzhdrdzTfwe8gO5EptzmW4tPGIbTlILqczOGbULLUiDow8zIg=="}
+  [1m[35mHotel Load (0.1ms)[0m  SELECT  "hotels".* FROM "hotels" WHERE "hotels"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/hotels
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/hotels" for ::1 at 2016-05-31 10:44:24 +0800
+Processing by HotelsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "hotels"
+  [1m[36mHotel Load (0.2ms)[0m  [1mSELECT  "hotels".* FROM "hotels" LIMIT 30 OFFSET 0[0m
+  Rendered hotels/_hotel.html.erb (0.9ms)
+  Rendered hotels/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_stylesheets.html.erb (4.2ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:45:02 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_stylesheets.html.erb (4.9ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/flights" for ::1 at 2016-05-31 10:45:04 +0800
+Processing by FlightsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "flights"
+  [1m[36mFlight Load (0.2ms)[0m  [1mSELECT  "flights".* FROM "flights" LIMIT 30 OFFSET 0[0m
+  Rendered flights/_flight.html.erb (2.1ms)
+  Rendered flights/index.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_stylesheets.html.erb (6.9ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 51ms (Views: 49.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:45:06 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_stylesheets.html.erb (6.9ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 46ms (Views: 45.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars" for ::1 at 2016-05-31 10:45:06 +0800
+Processing by CarsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "cars"
+  [1m[36mCar Load (0.2ms)[0m  [1mSELECT  "cars".* FROM "cars" LIMIT 30 OFFSET 0[0m
+  Rendered cars/_car.html.erb (1.2ms)
+  Rendered cars/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_stylesheets.html.erb (6.8ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 55ms (Views: 53.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/cars/order.2" for ::1 at 2016-05-31 10:45:08 +0800
+Processing by CarsController#order as 
+  Parameters: {"authenticity_token"=>"yEZENKXNpreuydZI4N8DwzTpRi7hRZa+Mungr81E1jkPDlHLJKOcWyA6Sa7M++i/WAQCnR6rd6Po2xfWsqqTrA=="}
+  [1m[35mCar Load (0.2ms)[0m  SELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "reservations" ("userName", "resvType", "identity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["userName", "user05"], ["resvType", 3], ["identity", "car03"], ["created_at", "2016-05-31 02:45:08.479652"], ["updated_at", "2016-05-31 02:45:08.479652"]]
+  [1m[35m (405.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCar Exists (0.2ms)[0m  SELECT  1 AS one FROM "cars" WHERE ("cars"."location" = 'car03' AND "cars"."id" != 2) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "cars" SET "numAvail" = ?, "updated_at" = ? WHERE "cars"."id" = ?[0m  [["numAvail", 28], ["updated_at", "2016-05-31 02:45:08.889307"], ["id", 2]]
+  [1m[35m (150.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/cars
+Completed 302 Found in 564ms (ActiveRecord: 555.9ms)
+
+
+Started GET "/cars" for ::1 at 2016-05-31 10:45:09 +0800
+Processing by CarsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "cars"
+  [1m[36mCar Load (0.2ms)[0m  [1mSELECT  "cars".* FROM "cars" LIMIT 30 OFFSET 0[0m
+  Rendered cars/_car.html.erb (1.8ms)
+  Rendered cars/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_stylesheets.html.erb (5.2ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 38ms (Views: 36.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:45:09 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_stylesheets.html.erb (3.6ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/flights" for ::1 at 2016-05-31 10:45:10 +0800
+Processing by FlightsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "flights"
+  [1m[36mFlight Load (0.2ms)[0m  [1mSELECT  "flights".* FROM "flights" LIMIT 30 OFFSET 0[0m
+  Rendered flights/_flight.html.erb (1.6ms)
+  Rendered flights/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_stylesheets.html.erb (5.6ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 42ms (Views: 40.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/flights/order.1" for ::1 at 2016-05-31 10:45:12 +0800
+Processing by FlightsController#order as 
+  Parameters: {"authenticity_token"=>"VqizGos1fHQWY9UGYlfQMRQMX8FQX1d00cNcolOs74WR4KblCltGmJiQSuBOcztNeOEbcq+xtmkL8avbLEKqEA=="}
+  [1m[35mFlight Load (0.2ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "reservations" ("userName", "resvType", "identity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["userName", "user05"], ["resvType", 1], ["identity", "flight01"], ["created_at", "2016-05-31 02:45:12.141692"], ["updated_at", "2016-05-31 02:45:12.141692"]]
+  [1m[35m (554.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFlight Exists (0.1ms)[0m  SELECT  1 AS one FROM "flights" WHERE ("flights"."flightNum" = 'flight01' AND "flights"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "flights" SET "numAvail" = ?, "updated_at" = ? WHERE "flights"."id" = ?[0m  [["numAvail", 1], ["updated_at", "2016-05-31 02:45:12.699631"], ["id", 1]]
+  [1m[35m (182.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/flights
+Completed 302 Found in 745ms (ActiveRecord: 737.7ms)
+
+
+Started GET "/flights" for ::1 at 2016-05-31 10:45:12 +0800
+Processing by FlightsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "flights"
+  [1m[36mFlight Load (0.2ms)[0m  [1mSELECT  "flights".* FROM "flights" LIMIT 30 OFFSET 0[0m
+  Rendered flights/_flight.html.erb (2.3ms)
+  Rendered flights/index.html.erb within layouts/application (5.6ms)
+  Rendered layouts/_stylesheets.html.erb (5.5ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 39ms (Views: 37.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/flights/order.5" for ::1 at 2016-05-31 10:45:14 +0800
+Processing by FlightsController#order as 
+  Parameters: {"authenticity_token"=>"u5XZPZqrdWngQateSkBhOVIJTdALxXJhdBf2Ypt3lo583czCG8VPhW6yNLhmZIpFPuQJY/Qrk3yuJQEb5JnTGw=="}
+  [1m[35mFlight Load (0.1ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "reservations" ("userName", "resvType", "identity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["userName", "user05"], ["resvType", 1], ["identity", "flight04"], ["created_at", "2016-05-31 02:45:14.598113"], ["updated_at", "2016-05-31 02:45:14.598113"]]
+  [1m[35m (264.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mFlight Exists (0.3ms)[0m  SELECT  1 AS one FROM "flights" WHERE ("flights"."flightNum" = 'flight04' AND "flights"."id" != 5) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "flights" SET "numAvail" = ?, "updated_at" = ? WHERE "flights"."id" = ?[0m  [["numAvail", 98], ["updated_at", "2016-05-31 02:45:14.867080"], ["id", 5]]
+  [1m[35m (392.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/flights
+Completed 302 Found in 666ms (ActiveRecord: 657.9ms)
+
+
+Started GET "/flights" for ::1 at 2016-05-31 10:45:15 +0800
+Processing by FlightsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "flights"
+  [1m[36mFlight Load (0.1ms)[0m  [1mSELECT  "flights".* FROM "flights" LIMIT 30 OFFSET 0[0m
+  Rendered flights/_flight.html.erb (1.3ms)
+  Rendered flights/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_stylesheets.html.erb (4.4ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 40ms (Views: 38.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:45:19 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_stylesheets.html.erb (3.5ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 27ms (Views: 26.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/trip.user05" for ::1 at 2016-05-31 10:45:19 +0800
+Processing by UsersController#tripList as 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mReservation Load (0.1ms)[0m  SELECT "reservations".* FROM "reservations" WHERE "reservations"."userName" = ?  [["userName", "user05"]]
+  [1m[36mHotel Load (0.1ms)[0m  [1mSELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1[0m  [["location", "hotel01"]]
+  [1m[35mCar Load (0.1ms)[0m  SELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1  [["location", "car03"]]
+  [1m[36mFlight Load (0.1ms)[0m  [1mSELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1[0m  [["flightNum", "flight01"]]
+  [1m[35mFlight Load (0.1ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1  [["flightNum", "flight04"]]
+  Rendered users/tripList.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_stylesheets.html.erb (5.3ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 50ms (Views: 45.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:45:50 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_stylesheets.html.erb (5.3ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/trip.user05" for ::1 at 2016-05-31 10:45:51 +0800
+Processing by UsersController#tripList as 
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mReservation Load (0.1ms)[0m  [1mSELECT "reservations".* FROM "reservations" WHERE "reservations"."userName" = ?[0m  [["userName", "user05"]]
+  [1m[35mHotel Load (0.1ms)[0m  SELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1  [["location", "hotel01"]]
+  [1m[36mCar Load (0.1ms)[0m  [1mSELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1[0m  [["location", "car03"]]
+  [1m[35mFlight Load (0.1ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1  [["flightNum", "flight01"]]
+  [1m[36mFlight Load (0.1ms)[0m  [1mSELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1[0m  [["flightNum", "flight04"]]
+  Rendered users/tripList.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_stylesheets.html.erb (5.5ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 55ms (Views: 50.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:46:36 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_stylesheets.html.erb (4.8ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 35ms (Views: 34.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/flights" for ::1 at 2016-05-31 10:46:37 +0800
+Processing by FlightsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "flights"
+  [1m[36mFlight Load (0.2ms)[0m  [1mSELECT  "flights".* FROM "flights" LIMIT 30 OFFSET 0[0m
+  Rendered flights/_flight.html.erb (1.8ms)
+  Rendered flights/index.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_stylesheets.html.erb (6.7ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 55ms (Views: 53.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/flights/order.8" for ::1 at 2016-05-31 10:46:38 +0800
+Processing by FlightsController#order as 
+  Parameters: {"authenticity_token"=>"fyoE7tPkAUAO4EN4PtOL0qGp1EZLtpeSg+Bgbp9thni4YhERUoo7rIAT3J4S92CuzUSQ9bRYdo9Z0pcX4IPD7Q=="}
+  [1m[35mFlight Load (0.1ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "reservations" ("userName", "resvType", "identity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["userName", "user05"], ["resvType", 1], ["identity", "flight03"], ["created_at", "2016-05-31 02:46:38.785783"], ["updated_at", "2016-05-31 02:46:38.785783"]]
+  [1m[35m (259.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mFlight Exists (0.1ms)[0m  SELECT  1 AS one FROM "flights" WHERE ("flights"."flightNum" = 'flight03' AND "flights"."id" != 8) LIMIT 1
+  [1m[36mSQL (0.1ms)[0m  [1mUPDATE "flights" SET "numAvail" = ?, "updated_at" = ? WHERE "flights"."id" = ?[0m  [["numAvail", 298], ["updated_at", "2016-05-31 02:46:39.048202"], ["id", 8]]
+  [1m[35m (389.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/flights
+Completed 302 Found in 656ms (ActiveRecord: 650.0ms)
+
+
+Started GET "/flights" for ::1 at 2016-05-31 10:46:39 +0800
+Processing by FlightsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "flights"
+  [1m[36mFlight Load (0.1ms)[0m  [1mSELECT  "flights".* FROM "flights" LIMIT 30 OFFSET 0[0m
+  Rendered flights/_flight.html.erb (1.0ms)
+  Rendered flights/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_stylesheets.html.erb (3.6ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:46:41 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_stylesheets.html.erb (4.9ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 33ms (Views: 32.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:46:42 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_stylesheets.html.erb (4.2ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 29ms (Views: 28.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/trip.user05" for ::1 at 2016-05-31 10:46:43 +0800
+Processing by UsersController#tripList as 
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mReservation Load (0.1ms)[0m  [1mSELECT "reservations".* FROM "reservations" WHERE "reservations"."userName" = ?[0m  [["userName", "user05"]]
+  [1m[35mHotel Load (0.1ms)[0m  SELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1  [["location", "hotel01"]]
+  [1m[36mCar Load (0.1ms)[0m  [1mSELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1[0m  [["location", "car03"]]
+  [1m[35mFlight Load (0.1ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1  [["flightNum", "flight01"]]
+  [1m[36mFlight Load (0.1ms)[0m  [1mSELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1[0m  [["flightNum", "flight04"]]
+  [1m[35mFlight Load (0.1ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1  [["flightNum", "flight03"]]
+  Rendered users/tripList.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_stylesheets.html.erb (5.0ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 50ms (Views: 45.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:47:12 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_stylesheets.html.erb (5.6ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/6" for ::1 at 2016-05-31 10:52:25 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered users/show.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_stylesheets.html.erb (13.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 46ms (Views: 44.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/6/edit" for ::1 at 2016-05-31 10:52:25 +0800
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "6"]]
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/edit.html.erb within layouts/application (2.9ms)
+  Rendered layouts/_stylesheets.html.erb (4.8ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 36ms (Views: 34.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:52:27 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_stylesheets.html.erb (4.5ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 33ms (Views: 32.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/trip.user05" for ::1 at 2016-05-31 10:52:31 +0800
+Processing by UsersController#tripList as 
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mReservation Load (0.1ms)[0m  [1mSELECT "reservations".* FROM "reservations" WHERE "reservations"."userName" = ?[0m  [["userName", "user05"]]
+  [1m[35mHotel Load (0.1ms)[0m  SELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1  [["location", "hotel01"]]
+  [1m[36mCar Load (0.1ms)[0m  [1mSELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1[0m  [["location", "car03"]]
+  [1m[35mFlight Load (0.1ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1  [["flightNum", "flight01"]]
+  [1m[36mFlight Load (0.1ms)[0m  [1mSELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1[0m  [["flightNum", "flight04"]]
+  [1m[35mFlight Load (0.1ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1  [["flightNum", "flight03"]]
+  Rendered users/tripList.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_stylesheets.html.erb (5.5ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 54ms (Views: 49.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 10:52:34 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_stylesheets.html.erb (3.6ms)
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 12:32:41 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_stylesheets.html.erb (25.9ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 140ms (Views: 139.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/cars.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-31 12:32:41 +0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-31 12:32:41 +0800
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-31 12:32:41 +0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-31 12:32:41 +0800
+
+
+Started GET "/assets/flights.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-31 12:32:41 +0800
+
+
+Started GET "/assets/hotels.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-31 12:32:41 +0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-31 12:32:41 +0800
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-31 12:32:41 +0800
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-31 12:32:41 +0800
+
+
+Started GET "/assets/cars.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-31 12:32:41 +0800
+
+
+Started GET "/assets/hotels.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-31 12:32:41 +0800
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-31 12:32:41 +0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-31 12:32:41 +0800
+
+
+Started GET "/assets/flights.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-31 12:32:41 +0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-31 12:32:41 +0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-31 12:32:41 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-31 12:32:41 +0800
+
+
+Started GET "/" for ::1 at 2016-05-31 13:13:14 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered pages/home.html.erb within layouts/application (199.9ms)
+  Rendered layouts/_stylesheets.html.erb (162.7ms)
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 771ms (Views: 703.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/trip.user05" for ::1 at 2016-05-31 13:13:19 +0800
+Processing by UsersController#tripList as 
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mReservation Load (0.4ms)[0m  SELECT "reservations".* FROM "reservations" WHERE "reservations"."userName" = ?  [["userName", "user05"]]
+  [1m[36mHotel Load (0.3ms)[0m  [1mSELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1[0m  [["location", "hotel01"]]
+  [1m[35mCar Load (0.3ms)[0m  SELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1  [["location", "car03"]]
+  [1m[36mFlight Load (0.2ms)[0m  [1mSELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1[0m  [["flightNum", "flight01"]]
+  [1m[35mFlight Load (0.1ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1  [["flightNum", "flight04"]]
+  [1m[36mFlight Load (0.1ms)[0m  [1mSELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1[0m  [["flightNum", "flight03"]]
+  Rendered users/tripList.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_stylesheets.html.erb (6.5ms)
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 288ms (Views: 58.1ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 13:13:31 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered pages/home.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_stylesheets.html.erb (4.5ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 54ms (Views: 52.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-05-31 14:15:10 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered pages/home.html.erb within layouts/application (17.1ms)
+  Rendered layouts/_stylesheets.html.erb (135.6ms)
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 214ms (Views: 205.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/flights.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-31 14:15:11 +0800
+
+
+Started GET "/assets/hotels.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-31 14:15:11 +0800
+
+
+Started GET "/assets/cars.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-31 14:15:11 +0800
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-31 14:15:11 +0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-31 14:15:11 +0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-31 14:15:11 +0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-31 14:15:11 +0800
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-31 14:15:11 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-31 14:15:11 +0800
+
+
+Started GET "/assets/cars.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-31 14:15:11 +0800
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-31 14:15:11 +0800
+
+
+Started GET "/assets/flights.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-31 14:15:11 +0800
+
+
+Started GET "/assets/hotels.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-31 14:15:11 +0800
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-31 14:15:11 +0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-31 14:15:11 +0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-31 14:15:11 +0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-31 14:15:11 +0800
+
+
+Started GET "/" for ::1 at 2016-05-31 14:43:05 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_stylesheets.html.erb (4.7ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 60ms (Views: 59.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/cars.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-31 14:43:05 +0800
+
+
+Started GET "/assets/flights.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-31 14:43:05 +0800
+
+
+Started GET "/assets/hotels.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-31 14:43:05 +0800
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-31 14:43:05 +0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-31 14:43:05 +0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-05-31 14:43:05 +0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-05-31 14:43:05 +0800
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-05-31 14:43:05 +0800
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-05-31 14:43:05 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-05-31 14:43:05 +0800
+
+
+Started GET "/assets/flights.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-31 14:43:05 +0800
+
+
+Started GET "/assets/cars.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-31 14:43:05 +0800
+
+
+Started GET "/assets/hotels.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-31 14:43:05 +0800
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-31 14:43:05 +0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-31 14:43:05 +0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-05-31 14:43:05 +0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-05-31 14:43:05 +0800
+
+
+Started GET "/home" for ::1 at 2016-05-31 14:43:08 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered pages/home.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_stylesheets.html.erb (22.5ms)
+  Rendered layouts/_header.html.erb (3.9ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 82ms (Views: 79.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/6" for ::1 at 2016-05-31 14:43:09 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered users/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_stylesheets.html.erb (6.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 46ms (Views: 44.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 14:43:10 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_stylesheets.html.erb (10.1ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 58ms (Views: 57.2ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/signout" for ::1 at 2016-05-31 14:54:16 +0800
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+gTCxgsJzgsq90A5xpvMA12+pZCqoXIibD6H5K7uqBRHCdDymC0V4/umPK8AZkUs7q25xb2VKoyPFjsqAzUskQ=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-05-31 14:54:16 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered pages/home.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_stylesheets.html.erb (5.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 36ms (Views: 35.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/signin" for ::1 at 2016-05-31 14:54:18 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (184.8ms)
+  Rendered layouts/_stylesheets.html.erb (8.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 239ms (Views: 238.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/sessions" for ::1 at 2016-05-31 14:54:23 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U4Zc/UTyrKf/wBg00ME1Vaw8Hi1fkcUPn9IDbd+z/sDui07J19Z3Ty6RZKIWPLx6Hy8CeEilnaF8+r+jcmh6RQ==", "session"=>{"name"=>"admin", "password"=>"[FILTERED]"}, "commit"=>"登陆"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1  [["name", "admin"]]
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/1" for ::1 at 2016-05-31 14:54:23 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/show.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_stylesheets.html.erb (5.9ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 39.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 14:54:26 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_stylesheets.html.erb (5.7ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 37ms (Views: 36.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 15:36:57 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_stylesheets.html.erb (10.0ms)
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 52ms (Views: 51.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 15:36:58 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_stylesheets.html.erb (6.9ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 58ms (Views: 57.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/manage/trip" for ::1 at 2016-05-31 15:38:03 +0800
+Processing by UsersController#tripManage as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mReservation Load (0.4ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered users/tripManage.html.erb within layouts/application (19.3ms)
+  Rendered layouts/_stylesheets.html.erb (7.0ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 68ms (Views: 63.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/trip.user01" for ::1 at 2016-05-31 15:38:08 +0800
+Processing by UsersController#tripList as 
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mReservation Load (0.3ms)[0m  [1mSELECT "reservations".* FROM "reservations" WHERE "reservations"."userName" = ?[0m  [["userName", "user01"]]
+  [1m[35mHotel Load (0.2ms)[0m  SELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1  [["location", "hotel02"]]
+  [1m[36mHotel Load (0.1ms)[0m  [1mSELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1[0m  [["location", "hotel03"]]
+  [1m[35mCar Load (0.2ms)[0m  SELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1  [["location", "car01"]]
+  [1m[36mCar Load (0.1ms)[0m  [1mSELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1[0m  [["location", "car03"]]
+  [1m[35mCar Load (0.1ms)[0m  SELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1  [["location", "car02"]]
+  [1m[36mFlight Load (0.2ms)[0m  [1mSELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1[0m  [["flightNum", "flight01"]]
+  [1m[35mFlight Load (0.1ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1  [["flightNum", "flight04"]]
+  [1m[36mFlight Load (0.1ms)[0m  [1mSELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1[0m  [["flightNum", "flight02"]]
+  [1m[35mFlight Load (0.1ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1  [["flightNum", "flight03"]]
+  Rendered users/tripList.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_stylesheets.html.erb (6.0ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 92ms (Views: 52.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 15:38:17 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_stylesheets.html.erb (7.5ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home" for ::1 at 2016-05-31 15:38:18 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_stylesheets.html.erb (6.7ms)
+  Rendered layouts/_header.html.erb (10.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 53ms (Views: 52.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-06-02 07:59:11 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (273.8ms)
+  Rendered layouts/_stylesheets.html.erb (274.8ms)
+  Rendered layouts/_header.html.erb (4.2ms)
+  Rendered layouts/_footer.html.erb (1.2ms)
+Completed 200 OK in 1079ms (Views: 1045.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2016-06-02 07:59:13 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_stylesheets.html.erb (6.5ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 42ms (Views: 40.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/manage/trip" for ::1 at 2016-06-02 08:08:44 +0800
+Processing by UsersController#tripManage as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mReservation Load (0.4ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered users/tripManage.html.erb within layouts/application (17.5ms)
+  Rendered layouts/_stylesheets.html.erb (6.8ms)
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 136ms (Views: 121.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/trip.user01" for ::1 at 2016-06-02 08:08:51 +0800
+Processing by UsersController#tripList as 
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mReservation Load (0.4ms)[0m  [1mSELECT "reservations".* FROM "reservations" WHERE "reservations"."userName" = ?[0m  [["userName", "user01"]]
+  [1m[35mHotel Load (0.2ms)[0m  SELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1  [["location", "hotel02"]]
+  [1m[36mHotel Load (0.1ms)[0m  [1mSELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1[0m  [["location", "hotel03"]]
+  [1m[35mCar Load (0.3ms)[0m  SELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1  [["location", "car01"]]
+  [1m[36mCar Load (0.1ms)[0m  [1mSELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1[0m  [["location", "car03"]]
+  [1m[35mCar Load (0.1ms)[0m  SELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1  [["location", "car02"]]
+  [1m[36mFlight Load (0.3ms)[0m  [1mSELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1[0m  [["flightNum", "flight01"]]
+  [1m[35mFlight Load (0.1ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1  [["flightNum", "flight04"]]
+  [1m[36mFlight Load (0.1ms)[0m  [1mSELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1[0m  [["flightNum", "flight02"]]
+  [1m[35mFlight Load (0.1ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1  [["flightNum", "flight03"]]
+  Rendered users/tripList.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_stylesheets.html.erb (8.0ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.8ms)
+Completed 200 OK in 169ms (Views: 83.5ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/home" for ::1 at 2016-06-02 08:09:00 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (4.1ms)
+  Rendered layouts/_stylesheets.html.erb (18.0ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 69ms (Views: 67.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-06-08 19:24:13 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (80.2ms)
+  Rendered layouts/_stylesheets.html.erb (262.1ms)
+  Rendered layouts/_header.html.erb (5.1ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 715ms (Views: 690.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home" for ::1 at 2016-06-08 19:26:49 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_stylesheets.html.erb (6.6ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 43ms (Views: 42.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/home" for ::1 at 2016-06-08 19:26:50 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_stylesheets.html.erb (5.2ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for ::1 at 2016-06-08 19:26:53 +0800
+Processing by UsersController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" LIMIT 30 OFFSET 0
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/_user.html.erb (4.7ms)
+  Rendered users/index.html.erb within layouts/application (32.2ms)
+  Rendered layouts/_stylesheets.html.erb (7.5ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 160ms (Views: 158.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/home" for ::1 at 2016-06-08 19:26:54 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_stylesheets.html.erb (8.4ms)
+  Rendered layouts/_header.html.erb (10.9ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 71ms (Views: 70.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for ::1 at 2016-06-08 19:26:56 +0800
+Processing by UsersController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" LIMIT 30 OFFSET 0
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/_user.html.erb (6.0ms)
+  Rendered users/index.html.erb within layouts/application (9.8ms)
+  Rendered layouts/_stylesheets.html.erb (12.0ms)
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 81ms (Views: 78.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/home" for ::1 at 2016-06-08 19:26:56 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_stylesheets.html.erb (11.1ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 66ms (Views: 64.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users" for ::1 at 2016-06-08 19:35:26 +0800
+Processing by UsersController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" LIMIT 30 OFFSET 0
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/_user.html.erb (3.3ms)
+  Rendered users/index.html.erb within layouts/application (6.2ms)
+  Rendered layouts/_stylesheets.html.erb (5.9ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 46ms (Views: 44.6ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/6" for ::1 at 2016-06-08 19:35:29 +0800
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"XuZqwRNxKFkWjcVNaFMDrRGFmiJ+QRrDDTkQMJDh9dGmhnXdpZbnTFqsXc+vCx5Tyagk21qZ8A2M976h78SO7A==", "id"=>"6"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 6]]
+  [1m[35m (85.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/users
+Completed 302 Found in 89ms (ActiveRecord: 86.1ms)
+
+
+Started GET "/users" for ::1 at 2016-06-08 19:35:29 +0800
+Processing by UsersController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" LIMIT 30 OFFSET 0
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered users/_user.html.erb (2.6ms)
+  Rendered users/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_stylesheets.html.erb (4.8ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/home" for ::1 at 2016-06-08 19:35:34 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_stylesheets.html.erb (5.9ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/manage/trip" for ::1 at 2016-06-08 19:35:37 +0800
+Processing by UsersController#tripManage as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mReservation Load (0.4ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered users/tripManage.html.erb within layouts/application (18.6ms)
+  Rendered layouts/_stylesheets.html.erb (6.7ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 107ms (Views: 85.3ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/flightsOrder.27" for ::1 at 2016-06-08 19:35:41 +0800
+Processing by FlightsController#destroyOrder as 
+  Parameters: {"authenticity_token"=>"wM4xTjrq6bzECAcyJVar1q62au2w/qVBf2VeYlE1ipI4ri5SjA0mqYgpn7DiDrYodpvUFJQmT4/+q/DzLhDxrw=="}
+  [1m[36mReservation Load (0.2ms)[0m  [1mSELECT  "reservations".* FROM "reservations" WHERE "reservations"."id" = ? LIMIT 1[0m  [["id", 27]]
+  [1m[35mFlight Load (0.3ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1  [["flightNum", "flight03"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "reservations" WHERE "reservations"."id" = ?  [["id", 27]]
+  [1m[36m (133.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFlight Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "flights" WHERE ("flights"."flightNum" = 'flight03' AND "flights"."id" != 8) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "flights" SET "numAvail" = ?, "updated_at" = ? WHERE "flights"."id" = ?  [["numAvail", 299], ["updated_at", "2016-06-08 11:35:41.280241"], ["id", 8]]
+  [1m[36m (106.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/manage/trip
+Completed 302 Found in 321ms (ActiveRecord: 241.8ms)
+
+
+Started GET "/manage/trip" for ::1 at 2016-06-08 19:35:41 +0800
+Processing by UsersController#tripManage as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mReservation Load (0.2ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered users/tripManage.html.erb within layouts/application (7.8ms)
+  Rendered layouts/_stylesheets.html.erb (4.8ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 43ms (Views: 41.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home" for ::1 at 2016-06-08 19:35:45 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_stylesheets.html.erb (7.5ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 43ms (Views: 41.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/hotels" for ::1 at 2016-06-08 19:35:46 +0800
+Processing by HotelsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "hotels"
+  [1m[36mHotel Load (0.2ms)[0m  [1mSELECT  "hotels".* FROM "hotels" LIMIT 30 OFFSET 0[0m
+  Rendered hotels/_hotel.html.erb (2.7ms)
+  Rendered hotels/index.html.erb within layouts/application (24.1ms)
+  Rendered layouts/_stylesheets.html.erb (6.0ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 119ms (Views: 101.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/hotels/new" for ::1 at 2016-06-08 19:35:48 +0800
+Processing by HotelsController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.9ms)
+  Rendered hotels/new.html.erb within layouts/application (78.3ms)
+  Rendered layouts/_stylesheets.html.erb (5.8ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 143ms (Views: 141.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/home" for ::1 at 2016-06-08 19:35:52 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_stylesheets.html.erb (5.6ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 47ms (Views: 46.7ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/signout" for ::1 at 2016-06-08 19:35:54 +0800
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"bhws35dyDZ/vUoDtQ8qUYJxtifnrjbcHSLL733nIJcOWfDPDIZXCiqNzGG+EkomeREA3AM9VXcnJfFVOBu1e/g=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-06-08 19:35:54 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered pages/home.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_stylesheets.html.erb (7.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 42ms (Views: 41.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/signup" for ::1 at 2016-06-08 19:35:55 +0800
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (115.0ms)
+  Rendered layouts/_stylesheets.html.erb (5.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 170ms (Views: 168.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for ::1 at 2016-06-08 19:36:07 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4ZEOM/tO4eEv1A9T2WPhHSaNxEyMRiNGak8FGU5adR4Z8REvTaku9GP1l9EeO/zj/qB6taieyYjrgauIMX8OIw==", "user"=>{"name"=>"user01", "email"=>"lsdl@kl", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."name" = 'user01' LIMIT 1[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('lsdl@kl') LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered shared/_error_messages.html.erb (3.5ms)
+  Rendered users/new.html.erb within layouts/application (7.9ms)
+  Rendered layouts/_stylesheets.html.erb (6.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 46.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/signin" for ::1 at 2016-06-08 19:36:18 +0800
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_stylesheets.html.erb (3.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 69ms (Views: 68.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/sessions" for ::1 at 2016-06-08 19:36:24 +0800
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4xY7fWRj5D3Ttq0GF0QHE9wacuH9VHHQ71omQbbIy50bdiRh0oQrKJ+XNYTQHBrtBDfMGNmMmx5ulIjQye2woA==", "session"=>{"name"=>"user01", "password"=>"[FILTERED]"}, "commit"=>"登陆"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."name" = ? LIMIT 1  [["name", "user01"]]
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/2" for ::1 at 2016-06-08 19:36:24 +0800
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered users/show.html.erb within layouts/application (11.3ms)
+  Rendered layouts/_stylesheets.html.erb (6.7ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 94ms (Views: 92.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home" for ::1 at 2016-06-08 19:36:32 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_stylesheets.html.erb (6.5ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 43ms (Views: 42.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/trip.user01" for ::1 at 2016-06-08 19:36:35 +0800
+Processing by UsersController#tripList as 
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mReservation Load (0.3ms)[0m  [1mSELECT "reservations".* FROM "reservations" WHERE "reservations"."userName" = ?[0m  [["userName", "user01"]]
+  [1m[35mHotel Load (0.3ms)[0m  SELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1  [["location", "hotel02"]]
+  [1m[36mHotel Load (0.1ms)[0m  [1mSELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1[0m  [["location", "hotel03"]]
+  [1m[35mCar Load (0.1ms)[0m  SELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1  [["location", "car01"]]
+  [1m[36mCar Load (0.1ms)[0m  [1mSELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1[0m  [["location", "car03"]]
+  [1m[35mCar Load (0.1ms)[0m  SELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1  [["location", "car02"]]
+  [1m[36mFlight Load (0.1ms)[0m  [1mSELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1[0m  [["flightNum", "flight01"]]
+  [1m[35mFlight Load (0.1ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1  [["flightNum", "flight04"]]
+  [1m[36mFlight Load (0.1ms)[0m  [1mSELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1[0m  [["flightNum", "flight02"]]
+  [1m[35mFlight Load (0.0ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1  [["flightNum", "flight03"]]
+  Rendered users/tripList.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_stylesheets.html.erb (4.0ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 120ms (Views: 42.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/home" for ::1 at 2016-06-08 19:36:49 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered pages/home.html.erb within layouts/application (1.4ms)
+  Rendered layouts/_stylesheets.html.erb (6.4ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 44ms (Views: 42.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/trip.user01" for ::1 at 2016-06-08 19:36:50 +0800
+Processing by UsersController#tripList as 
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mReservation Load (0.2ms)[0m  [1mSELECT "reservations".* FROM "reservations" WHERE "reservations"."userName" = ?[0m  [["userName", "user01"]]
+  [1m[35mHotel Load (0.1ms)[0m  SELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1  [["location", "hotel02"]]
+  [1m[36mHotel Load (0.1ms)[0m  [1mSELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1[0m  [["location", "hotel03"]]
+  [1m[35mCar Load (0.1ms)[0m  SELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1  [["location", "car01"]]
+  [1m[36mCar Load (0.1ms)[0m  [1mSELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1[0m  [["location", "car03"]]
+  [1m[35mCar Load (0.1ms)[0m  SELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1  [["location", "car02"]]
+  [1m[36mFlight Load (0.1ms)[0m  [1mSELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1[0m  [["flightNum", "flight01"]]
+  [1m[35mFlight Load (0.1ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1  [["flightNum", "flight04"]]
+  [1m[36mFlight Load (0.1ms)[0m  [1mSELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1[0m  [["flightNum", "flight02"]]
+  [1m[35mFlight Load (0.1ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1  [["flightNum", "flight03"]]
+  Rendered users/tripList.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_stylesheets.html.erb (6.8ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 70ms (Views: 62.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/home" for ::1 at 2016-06-08 19:36:55 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered pages/home.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_stylesheets.html.erb (5.9ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 39ms (Views: 38.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/flights" for ::1 at 2016-06-08 19:36:56 +0800
+Processing by FlightsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "flights"[0m
+  [1m[35mFlight Load (0.2ms)[0m  SELECT  "flights".* FROM "flights" LIMIT 30 OFFSET 0
+  Rendered flights/_flight.html.erb (3.3ms)
+  Rendered flights/index.html.erb within layouts/application (27.0ms)
+  Rendered layouts/_stylesheets.html.erb (6.1ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 113ms (Views: 111.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/flights/order.6" for ::1 at 2016-06-08 19:37:00 +0800
+Processing by FlightsController#order as 
+  Parameters: {"authenticity_token"=>"KP3Mb+IIcE66OoqdAsAiqEbyhBeAZ53sbojSlu130dLQndNzVO+/W/YbEh/FmD9Wnt867qS/dyLvRnwHklKq7w=="}
+  [1m[36mFlight Load (0.2ms)[0m  [1mSELECT  "flights".* FROM "flights" WHERE "flights"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "reservations" ("userName", "resvType", "identity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["userName", "user01"], ["resvType", 1], ["identity", "flight05"], ["created_at", "2016-06-08 11:37:00.993634"], ["updated_at", "2016-06-08 11:37:00.993634"]]
+  [1m[36m (88.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFlight Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "flights" WHERE ("flights"."flightNum" = 'flight05' AND "flights"."id" != 6) LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  UPDATE "flights" SET "numAvail" = ?, "updated_at" = ? WHERE "flights"."id" = ?  [["numAvail", 99], ["updated_at", "2016-06-08 11:37:01.085608"], ["id", 6]]
+  [1m[36m (105.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/flights
+Completed 302 Found in 202ms (ActiveRecord: 195.4ms)
+
+
+Started GET "/flights" for ::1 at 2016-06-08 19:37:01 +0800
+Processing by FlightsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "flights"[0m
+  [1m[35mFlight Load (0.1ms)[0m  SELECT  "flights".* FROM "flights" LIMIT 30 OFFSET 0
+  Rendered flights/_flight.html.erb (2.2ms)
+  Rendered flights/index.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_stylesheets.html.erb (4.7ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 39ms (Views: 37.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/home" for ::1 at 2016-06-08 19:37:06 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered pages/home.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_stylesheets.html.erb (5.6ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/trip.user01" for ::1 at 2016-06-08 19:37:07 +0800
+Processing by UsersController#tripList as 
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mReservation Load (0.2ms)[0m  [1mSELECT "reservations".* FROM "reservations" WHERE "reservations"."userName" = ?[0m  [["userName", "user01"]]
+  [1m[35mHotel Load (0.1ms)[0m  SELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1  [["location", "hotel02"]]
+  [1m[36mHotel Load (0.1ms)[0m  [1mSELECT  "hotels".* FROM "hotels" WHERE "hotels"."location" = ? LIMIT 1[0m  [["location", "hotel03"]]
+  [1m[35mCar Load (0.1ms)[0m  SELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1  [["location", "car01"]]
+  [1m[36mCar Load (0.1ms)[0m  [1mSELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1[0m  [["location", "car03"]]
+  [1m[35mCar Load (0.1ms)[0m  SELECT  "cars".* FROM "cars" WHERE "cars"."location" = ? LIMIT 1  [["location", "car02"]]
+  [1m[36mFlight Load (0.1ms)[0m  [1mSELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1[0m  [["flightNum", "flight01"]]
+  [1m[35mFlight Load (0.1ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1  [["flightNum", "flight04"]]
+  [1m[36mFlight Load (0.1ms)[0m  [1mSELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1[0m  [["flightNum", "flight02"]]
+  [1m[35mFlight Load (0.1ms)[0m  SELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1  [["flightNum", "flight03"]]
+  [1m[36mFlight Load (0.1ms)[0m  [1mSELECT  "flights".* FROM "flights" WHERE "flights"."flightNum" = ? LIMIT 1[0m  [["flightNum", "flight05"]]
+  Rendered users/tripList.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_stylesheets.html.erb (7.6ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 77ms (Views: 67.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/home" for ::1 at 2016-06-08 19:37:10 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_stylesheets.html.erb (6.6ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 43ms (Views: 42.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-06-08 20:05:34 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered pages/home.html.erb within layouts/application (22.3ms)
+  Rendered layouts/_stylesheets.html.erb (167.5ms)
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 256ms (Views: 245.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/home" for ::1 at 2016-06-08 20:05:37 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered pages/home.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_stylesheets.html.erb (5.3ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 36ms (Views: 35.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/home" for ::1 at 2016-06-08 20:05:54 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_stylesheets.html.erb (6.0ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/home" for ::1 at 2016-06-08 20:06:04 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_stylesheets.html.erb (34.8ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 71ms (Views: 70.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/hotels" for ::1 at 2016-06-08 20:06:05 +0800
+Processing by HotelsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "hotels"[0m
+  [1m[35mHotel Load (0.2ms)[0m  SELECT  "hotels".* FROM "hotels" LIMIT 30 OFFSET 0
+  Rendered hotels/_hotel.html.erb (2.9ms)
+  Rendered hotels/index.html.erb within layouts/application (16.8ms)
+  Rendered layouts/_stylesheets.html.erb (6.7ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 83ms (Views: 77.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/hotels" for ::1 at 2016-06-08 20:07:27 +0800
+Processing by HotelsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "hotels"
+  [1m[36mHotel Load (0.2ms)[0m  [1mSELECT  "hotels".* FROM "hotels" LIMIT 30 OFFSET 0[0m
+  Rendered hotels/_hotel.html.erb (1.4ms)
+  Rendered hotels/index.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_stylesheets.html.erb (9.4ms)
+  Rendered layouts/_header.html.erb (2.5ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 62ms (Views: 60.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/home" for ::1 at 2016-06-08 20:07:50 +0800
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered pages/home.html.erb within layouts/application (2.1ms)
+  Rendered layouts/_stylesheets.html.erb (10.3ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 63ms (Views: 62.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home" for ::1 at 2016-06-08 20:07:53 +0800
+Processing by PagesController#home as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_stylesheets.html.erb (7.9ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 48.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-06-25 23:52:24 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered pages/home.html.erb within layouts/application (36.2ms)
+  Rendered layouts/_stylesheets.html.erb (224.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 419ms (Views: 406.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/cars.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-25 23:52:26 +0800
+
+
+Started GET "/assets/flights.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-25 23:52:26 +0800
+
+
+Started GET "/assets/hotels.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-25 23:52:26 +0800
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-25 23:52:26 +0800
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-25 23:52:26 +0800
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-06-25 23:52:26 +0800
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-06-25 23:52:26 +0800
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-25 23:52:26 +0800
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-25 23:52:26 +0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-06-25 23:52:26 +0800
+
+
+Started GET "/assets/cars.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-25 23:52:26 +0800
+
+
+Started GET "/assets/flights.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-25 23:52:26 +0800
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-25 23:52:26 +0800
+
+
+Started GET "/assets/hotels.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-25 23:52:26 +0800
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-25 23:52:26 +0800
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-25 23:52:26 +0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-06-25 23:52:26 +0800
